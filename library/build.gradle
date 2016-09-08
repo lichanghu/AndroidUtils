@@ -1,15 +1,17 @@
 apply plugin: 'com.android.library'
-
+apply plugin: 'com.novoda.bintray-release'
 android {
-    compileSdkVersion 24
-    buildToolsVersion "24.0.1"
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
 
     defaultConfig {
-        minSdkVersion 23
-        targetSdkVersion 24
+        minSdkVersion 16
+        targetSdkVersion 21
         versionCode 1
         versionName "1.0"
     }
+
+
     buildTypes {
         release {
             minifyEnabled false
@@ -18,8 +20,32 @@ android {
     }
 }
 
+
+
+
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:24.1.0'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+
+}
+
+
+publish {
+    userOrg = 'lichanghu'//bintray.com用户名
+    groupId = 'com.lichanghu'//jcenter上的路径
+    artifactId = 'androidutils'//项目名称
+    publishVersion = '1.0.0'//版本号
+    desc = 'Oh hi, this is a nice description for a project, right?'//描述，不重要
+    website = 'https://github.com/lichanghu/AndroidUtils'//网站，不重要
+}
+
+allprojects {
+    tasks.withType(Javadoc) {
+        options{
+            encoding "UTF-8"
+            charSet 'UTF-8'
+            links "http://docs.oracle.com/javase/7/docs/api"
+        }
+    }
 }
