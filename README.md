@@ -55,7 +55,9 @@
 
     KeyBoardUtils.closeKeyboard(mEditText, this);
 
-   
+#VersionUtils读取appVersionName
+
+    VersionUtils.getVersionName(context);
     
   
   
