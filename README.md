@@ -42,7 +42,20 @@
         ExitAppUtils.getInstance().delActivity(this);
     }
     
-#    
+#CacheManager缓存管理
+    清除缓存
+    
+     private void clearCache() {
+        CacheManager.clearAllCache(this);
+    }
+    
+#KeyBoardUtils键盘关闭
+
+    private EditText mEditText;
+
+    KeyBoardUtils.closeKeyboard(mEditText, this);
+
+   
     
   
   
