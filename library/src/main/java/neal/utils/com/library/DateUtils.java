@@ -6,7 +6,6 @@ import java.util.Locale;
 
 /**
  * Created by Neal on 8/12/15.
- * <p/>
  * 日期utils类
  */
 public class DateUtils {

@@ -8,7 +8,6 @@ import java.math.BigDecimal;
 
 /**
  * Created by Neal on 7/27/15.
- * <p/>
  * 缓存管理类
  */
 public class CacheManager {

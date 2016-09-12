@@ -36,8 +36,17 @@ publish {
     userOrg = 'lichanghu'//bintray.com用户名
     groupId = 'com.lichanghu'//jcenter上的路径
     artifactId ='androidutils'//项目名称
-    publishVersion = '1.0.0'//版本号
+    publishVersion = '1.1.0'//版本号
     desc = 'Oh hi, this is a nice description for a project, right?'//描述，不重要
     website = 'https://github.com/lichanghu/AndroidUtils'//网站，不重要
 }
 
+allprojects {
+    tasks.withType(Javadoc) {
+        options{
+            encoding "UTF-8"
+            charSet 'UTF-8'
+            links "http://docs.oracle.com/javase/7/docs/api"
+        }
+    }
+}

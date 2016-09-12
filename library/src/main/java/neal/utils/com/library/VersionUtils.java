@@ -6,7 +6,6 @@ import android.content.pm.PackageManager;
 
 /**
  * Created by Neal on 7/14/16.
- * <p>
  * version utils
  */
 

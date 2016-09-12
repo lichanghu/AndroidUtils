@@ -17,6 +17,5 @@ public class AndroidUtilsApplication extends Application {
         //使用AndroidUtils.Klog打印信息 false是关闭信息
         KLog.init(true);
 
-
     }
 }
