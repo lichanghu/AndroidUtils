@@ -59,6 +59,31 @@
 
     VersionUtils.getVersionName(context);
     
+#DateUtils
+时间表现的样式
+    
+     public static SimpleDateFormat getSimpleDateFormat() {
+        return new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.CHINA);
+     }
+
+    public static SimpleDateFormat getSimpleDateFormatMinute() {
+        return new SimpleDateFormat("yyyy-MM-dd HH:mm", Locale.CHINA);
+    }
+
+    public static SimpleDateFormat getSimpleDateFormatNoTime() {
+        return new SimpleDateFormat("yyyy-MM-dd", Locale.CHINA);
+    }
+
+    public static SimpleDateFormat getSimpleDateFormatNoDay() {
+        return new SimpleDateFormat("yyyy-MM", Locale.CHINA);
+    }
+
+    public static SimpleDateFormat getSimpleDateFormatNoDate() {
+        return new SimpleDateFormat("HH:mm:ss", Locale.CHINA);
+    }
+
+    
+    
   
   
   
